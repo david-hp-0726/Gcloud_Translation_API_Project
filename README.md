@@ -1,0 +1,1 @@
+# Gcloud_Translation_API_Project
