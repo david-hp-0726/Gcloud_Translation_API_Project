@@ -1,4 +1,4 @@
-# Google Cloud Translation API Analysis
+# An Evaluation of the Accuracy of Google Cloud Translation API
 ## Introduction
 
 ## Architecture Overview
