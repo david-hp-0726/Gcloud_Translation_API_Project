@@ -21,6 +21,7 @@
 |Speech|[Barack Obama's 2008 New Hampshire Primary Speech](https://gist.github.com/mcdickenson/25479c8571b8f86f3a21c8d579102f93)|
 
 ## Architecture Overview
+User would first upload or manually type down the input text into the google colab notebook. In the notebook, the user would also define parameters including the target language and number of rounds that the input text will be translated back and forth between the original langauge and the target language. A Google Cloud Translation API would then be initialized and used to translate text and receive translation results. Finally, the results are organized into dataframes and analyzed in the google colab notebook. 
 <img width="561" alt="Screen Shot 2023-04-13 at 2 31 36 PM" src="https://user-images.githubusercontent.com/120674894/231851426-153404a2-c977-40e9-9465-d282486b0493.png">
 
 
