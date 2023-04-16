@@ -26,7 +26,7 @@
 
 ## Code Explanation
 ### Helper Functions
-- **Define a function** that converts two texts into all lowercase, remove punctuations, and computes the cosine similarity score of two texts
+- Define a function that converts two texts into all lowercase, remove punctuations, and computes the cosine similarity score of two texts
 ```python
 def text_similarity(text1, text2):
   # remove punctuations and make text all lowercase
@@ -39,7 +39,7 @@ def text_similarity(text1, text2):
   return similarity[1,0]
 ```
 
-- **Define a function** that calls google cloud translation api, translates a text between the original language and the target language for a specified number of rounds, and returns the translated text
+- Define a function that calls google cloud translation api, translates a text between the original language and the target language for a specified number of rounds, and returns the translated text
 ```python
 # import library and upload api credentials
 from google.cloud import translate_v2
@@ -89,12 +89,12 @@ for text_idx in range(0, len(var1_text)):
       new_row = [original_language, target_language, text_name, num_rounds, similarity_score]
       result.loc[len(result)] = new_row
 ```
-- **Result dataframe overview**
+- Result dataframe overview
 
  <img width="702" alt="Screen Shot 2023-04-16 at 2 24 35 PM" src="https://user-images.githubusercontent.com/120674894/232333776-1863793a-1f40-481d-900a-8acf0acd0b18.png">
  
 ### Data Visualizations
-- **To visualize the relationship between individual explanatory variables and similarity score**, data is grouped by the explanatory variable and then averaged by the response variable. 
+- To visualize the relationship between individual explanatory variables and similarity score, data is grouped by the explanatory variable and then averaged by the response variable. 
 ```python
 # reorganized data
 result_content = result.groupby("Content_Type").agg(Average_Similarity_Score = ("Similarity_Score", "mean")).sort_values("Average_Similarity_Score").reset_index()
@@ -112,13 +112,13 @@ for i in range(0, len(result_content)):
 score = result_content.loc[i, "Average_Similarity_Score"]
 plt.text(score, i, str(round(score, 3)), fontweight = "bold")
 ```
-- **The above code generates the following table and plot**
+- The above code generates the following table and plot
 
 <img width="373" alt="Screen Shot 2023-04-16 at 2 33 39 PM" src="https://user-images.githubusercontent.com/120674894/232334729-8aa4ffce-9b6d-4c29-95d4-79c70f04052b.png">
 <img width="709" alt="Screen Shot 2023-04-16 at 2 33 58 PM" src="https://user-images.githubusercontent.com/120674894/232334735-0a46fd56-7377-4f49-94de-04b77ae9965b.png">
 
 
-- **To visualize how two variables work in tandem to impact similarity score**, data is reorganized into tables where the row index represents one variable and the column index represents another variable
+- To visualize how two variables work in tandem to impact similarity score, data is reorganized into tables where the row index represents one variable and the column index represents another variable
 ```python
 result_type_numrounds = pd.pivot_table(result, index = "Content_Type", columns = "Num_Rounds", values = "Similarity_Score").T
 display(result_type_numrounds)
@@ -131,7 +131,7 @@ plt.legend(bbox_to_anchor = (1.05, 1))
 plt.show()
 ```
 
-- **The above code generates the following table and plot**
+- The above code generates the following table and plot
 <img width="641" alt="Screen Shot 2023-04-16 at 2 42 13 PM" src="https://user-images.githubusercontent.com/120674894/232334685-083d4188-6455-48cf-97dd-80df5d6eebe4.png">
 <img width="794" alt="Screen Shot 2023-04-16 at 2 42 37 PM" src="https://user-images.githubusercontent.com/120674894/232334689-af5ea0f2-5e53-4541-8be7-d8757cbbc0da.png">
 
