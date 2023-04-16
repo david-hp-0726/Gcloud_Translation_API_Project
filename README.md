@@ -136,6 +136,5 @@ plt.show()
 <img width="794" alt="Screen Shot 2023-04-16 at 2 42 37 PM" src="https://user-images.githubusercontent.com/120674894/232334689-af5ea0f2-5e53-4541-8be7-d8757cbbc0da.png">
 
 ## Analysis
-### Explanatory Variables
 
-### Response Variable
+## Discussion
