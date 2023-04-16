@@ -65,7 +65,7 @@ def repeat_translate(text, original_language, target_language, num_rounds):
 ```
 
 ### Fetching Data from API
-- Each forloop iteration translates a text for the specified number of rounds, compares the original with the the translated text to compute a similarity score, then add the data to the result dataframe
+- Each forloop iteration translates a text for a specified number of rounds, compares the original with the the translated text to compute a similarity score, then add the data to the result dataframe
 ```python
 # define variables
 filenames = ['philosophical_essay.txt', 'news_article.txt', 'scientific_article.txt', 'speech.txt'] # to be uploaded
@@ -77,7 +77,7 @@ var3_num_translations = [1, 2, 5, 10]
 result = pd.DataFrame(columns = ["Original_Language", "Target_Language", "Content_Type", "Num_Rounds", "Similarity_Score"])
 original_language = "English"
 
-# translate the input texts for the specified number
+# translate the input texts for a specified number of rounds
 for text_idx in range(0, len(var1_text)):
   text_name = filenames[text_idx].split('.')[0]
   original_text = var1_text[text_idx]
