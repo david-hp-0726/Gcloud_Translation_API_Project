@@ -15,8 +15,8 @@
 ### Text Input
 |Content Type|Article|
 |------------|-------------|
-|News Article|[Trump asks to delay sexual assault trial following historic indictment](https://www.cnn.com/2023/04/12/politics/e-jean-carroll-trump-lawyers-trial/index.html)|
-|Scientific Article|[How hard wired is human behavior](https://hbr.org/1998/07/how-hardwired-is-human-behavior)|
+|News Article|[Trump Asks to Delay Sexual Assault Trial Following Historic Indictment](https://www.cnn.com/2023/04/12/politics/e-jean-carroll-trump-lawyers-trial/index.html)|
+|Scientific Article|[How Hard Wired is Human Behavior](https://hbr.org/1998/07/how-hardwired-is-human-behavior)|
 |Philosophical Essay|[Introduction to Critique of Pure Reason](https://www.marxists.org/reference/subject/ethics/kant/reason/ch01.htm)|
 |Speech|[Barack Obama's 2008 New Hampshire Primary Speech](https://gist.github.com/mcdickenson/25479c8571b8f86f3a21c8d579102f93)|
 
