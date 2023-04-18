@@ -24,11 +24,11 @@
 User would first upload or manually type down the input text into the google colab notebook. In the notebook, the user would also define parameters including the target language and number of rounds that the input text will be translated back and forth between the original langauge and the target language. A Google Cloud Translation API would then be initialized and used to translate text and receive translation results. Finally, the results are organized into dataframes and analyzed in the google colab notebook. 
 <img width="561" alt="Screen Shot 2023-04-13 at 2 31 36 PM" src="https://user-images.githubusercontent.com/120674894/231851426-153404a2-c977-40e9-9465-d282486b0493.png">
 
-## Using the Translation API
-- First, manually type down a piece of text and define parameters.
+## Using the API in Colab Notebook
+- First, manually type down a piece of text and define parameters
 <img width="1368" alt="Screen Shot 2023-04-18 at 9 21 25 AM" src="https://user-images.githubusercontent.com/120674894/232790711-48dba992-092d-465c-9c20-fc042dbd73eb.png">
 
-- Based on the parameters defined, the translated text will be printed along with other requested outputs.
+- Based on the parameters defined, the translated text will be printed along with other requested outputs
 <img width="444" alt="Screen Shot 2023-04-18 at 9 21 40 AM" src="https://user-images.githubusercontent.com/120674894/232790802-6dedf8ba-3759-413e-ae2a-7a19dfa93a03.png">
 
 
