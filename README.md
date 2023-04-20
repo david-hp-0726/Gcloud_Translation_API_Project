@@ -38,6 +38,16 @@ User would first upload or manually type down the input text into the google col
 
 
 ## Code Explanation
+### Upload Credentials
+1. Enable Cloud Translation API in your project
+2. Go to API & Services -> Credentials -> Create Credentails 
+3. Create a service account, grant the account Cloud Translation API Editor role, and use the service account to generate API credentials in json format
+4. Name the API Credentials "api_credentials.json", upload it using the following code and store it as an environmental variable named "GOOGLE_APPLICATION_CREDENTAILS" using the following code
+```python
+files.upload()
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "api_credentials.json"
+```
+
 ### Helper Functions
 - Define a function that converts two texts into all lowercase, remove punctuations, and computes the cosine similarity score of two texts
 ```python
