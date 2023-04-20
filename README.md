@@ -1,6 +1,5 @@
 # An Evaluation of the Accuracy of Google Cloud Translation API
 ## Introduction
-
 ### Research Question 
 - What are some factors that impact the quality of translation of Google Cloud Translation API?
 
@@ -11,6 +10,12 @@
 
 ### Response Variable
 1. Accuracy of Translation (measured by cosine similarity score between the original text and the translated text)
+
+### Goal of This Project
+- The main goal of this project is to test the quality of the Google Cloud Translation API. The quality of translation is measured by the text similarity score between original text and the final text after being translated back and forth. 
+
+### Hypothesis
+- Our hypothesis is that the API would have varied performance when translating different languages and content types. Our other hypothesis is that text similarity scores will go down as we increase the number of translations since the original meaning of certain texts will be lost through translation.
 
 ### Text Input
 |Content Type|Article|
@@ -142,7 +147,3 @@ plt.show()
 - The above code generates the following table and plot
 <img width="641" alt="Screen Shot 2023-04-16 at 2 42 13 PM" src="https://user-images.githubusercontent.com/120674894/232334685-083d4188-6455-48cf-97dd-80df5d6eebe4.png">
 <img width="794" alt="Screen Shot 2023-04-16 at 2 42 37 PM" src="https://user-images.githubusercontent.com/120674894/232334689-af5ea0f2-5e53-4541-8be7-d8757cbbc0da.png">
-
-## Analysis
-
-## Discussion
